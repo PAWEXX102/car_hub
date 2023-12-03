@@ -37,33 +37,5 @@ export const Cars = [
         transmission:'Automatic',
         seats:'4',
     },
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    
     
 ]

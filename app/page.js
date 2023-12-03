@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex gap-20 mx-20 my-20 items-center text-center justify-center overflow-auto" style={{ maxWidth: 'calc(6 * 20rem)' }}>
+      <div className="flex gap-20 mx-20 my-20 items-center text-center justify-center overflow-auto py-10" style={{ maxWidth: 'calc(6 * 20rem)' }}>
         {Cars.map((car) => (
           <CarPrev car={car} />
         ))}
