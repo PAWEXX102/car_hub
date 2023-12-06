@@ -1,6 +1,7 @@
 import './globals.css'
 import { fredoka } from './Font'
 import { NavBar } from './components/NavBar'
+import { Footer } from './components/Footer'
 
 export const metadata = {
   title: 'Car Hub',
@@ -12,8 +13,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={fredoka.className}>
         <NavBar />
-        {children}
-        </body>
+        <div className="pt-16">
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   )
 }

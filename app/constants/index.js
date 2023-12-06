@@ -1,41 +1,118 @@
+const RandomID = () => Math.floor(Math.random() * 1000000);
+
 export const NavLinks = [
-    {
-        path: '/',
-        name: 'Rental deals'
-    },
-    {
-        path: 'FavoriteCars',
-        name: 'Favorite Cars'
-    },
-]
+  {
+    path: "/",
+    name: "Rental deals",
+  },
+  {
+    path: "FavoriteCars",
+    name: "Favorite Cars",
+  },
+];
+
+export const FooterLinks = [
+  {
+    path: "Regulations",
+    name: "Regulations",
+  },
+  {
+    path: "LegalNotice",
+    name: "Legal notice",
+  },
+  {
+    path: "PrivacyPolicy",
+    name: "Privacy policy",
+  },
+  {
+    path: "CookiePolicy",
+    name: "Cookie policy",
+  },
+];
 
 export const Cars = [
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    {
-        name:'BMW M3',
-        price: '100',
-        mark:'/BMW-icon.png',
-        image:'/BMW-side.png',
-        fuel:'24',
-        transmission:'Automatic',
-        seats:'4',
-    },
-    
-]
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+  {
+    name: "BMW M3",
+    price: "100",
+    manufacture: "BMW",
+    mark: "/BMW-icon.png",
+    image: "/BMW-side.png",
+    mpg: "24",
+    transmission: "Automatic",
+    seats: "4",
+    MakeData: "2021",
+    id: RandomID(),
+    favorite: false,
+    motorType:"fuel",
+  },
+];

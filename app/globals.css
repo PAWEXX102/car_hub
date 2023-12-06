@@ -18,7 +18,22 @@ input{
     border: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 select{
     outline: none;
     border: none;
 }
+
+body {
+    overflow-x: hidden;
+    scrollbar-width: none; /* dla Firefox */
+    
+}
+
+body::-webkit-scrollbar {
+    display: none; /* dla Chrome, Safari i Opera */
+}
+
