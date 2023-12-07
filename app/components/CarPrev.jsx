@@ -40,17 +40,17 @@ export const CarPrev = ({ car }) => {
       className="relative"
     >
       <div
-        className={`flex flex-col rounded-2xl gap-1 w-full sm:w-[15rem] h-auto sm:h-[16rem] ${
+        className={`flex flex-col rounded-2xl gap-1 w-[13rem] h-[14rem] lg:w-[15rem]  lg:h-[16rem] ${
           isHovered ? "bg-white drop-shadow-xl" : "bg-gray-100"
         } duration-200`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onDoubleClick={HandleFavoriteCar}
       >
-        <div className="flex flex-row gap-14 px-5 pt-5 items-center text-center">
-          <div className="flex gap-2">
-            <Image src={car.mark} width={32} height={32} alt={"MarkLogo"} />
-            <h1 className="text-xl font-medium">{car.name}</h1>
+        <div className="flex flex-row lg:gap-14 gap-10 px-5 pt-5 items-center text-center">
+          <div className="flex gap-2 items-center text-center">
+            <Image src={car.mark} width={32} height={32} alt={"MarkLogo"} className=" object-cover" />
+            <h1 className="lg:text-xl text-sm font-medium">{car.name}</h1>
           </div>
           <button onClick={HandleFavoriteCar}>
             <Image
@@ -60,6 +60,7 @@ export const CarPrev = ({ car }) => {
               width={20}
               height={20}
               alt={"Heart"}
+              className=" object-cover"
             />
           </button>
         </div>
@@ -68,13 +69,13 @@ export const CarPrev = ({ car }) => {
           <h1 className="text-2xl font-bold">{car.price}</h1>
           <h1 className="relative text-sm top-2">/day</h1>
         </div>
-        <div className="justify-center flex max-h-[7rem]">
+        <div className="justify-center  flex max-h-[7rem]">
           <Image
             src={car.image}
             width={200}
             height={200}
             alt={"CarImage"}
-            className="p-3 object-cover"
+            className="p-3 object-contain h-[6rem]"
           />
         </div>
 

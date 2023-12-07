@@ -6,12 +6,12 @@ import { CarCatalogue } from "./components/CarCatalogue";
 export default function Home() {
   return (
     <main className=" flex flex-col items-center text-center justify-center">
-      <div className="flex flex-col md:flex-row text-start items-center w-auto h-auto">
-        <div className="ml-5 sm:ml-10 md:ml-20 flex flex-col gap-10 text-start items-start">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-8xl">
+      <div className="flex flex-col md:flex-row text-start items-center w-auto h-auto my-10">
+        <div className="lg:ml-5 flex flex-col gap-10 text-center items-center w-full lg:text-start lg:items-start">
+          <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl w-[20rem] lg:w-auto font-semibold lg:font-medium">
             Find, book, rent a car-quick and super easy!
           </h1>
-          <h1 className="text-sm sm:text-md md:text-lg lg:text-xl xl:text-3xl text-gray-400">
+          <h1 className="text-sm sm:text-md md:text-lg lg:text-xl xl:text-3xl text-gray-400 w-[20rem] lg:w-auto">
             Streamline your car rental experience with our effortless booking
             process.
           </h1>
@@ -22,14 +22,14 @@ export default function Home() {
             Explore Cars
           </button>
         </div>
-        <div className="relative left-0 md:left-[20rem] bottom-0 md:bottom-[5rem]">
+        <div className=" relative left-0 md:left-[30rem] bottom-0 md:bottom-[5rem] hidden lg:block">
           <Image src="/hero-bg.png" alt="Hero" width={4000} height={4000} className=" relative object-cover bottom-[5rem] " />
           <Image
             src="/hero.png"
             alt="Hero"
-            width={4000}
+            width={2000}
             height={100}
-            className="absolute top-0 right-0 md:right-[20rem] z-2 object-cover"
+            className="absolute top-0 right-0 md:right-[20rem] z-2 object-fill"
           />
         </div>
       </div>

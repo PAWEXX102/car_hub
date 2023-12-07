@@ -41,7 +41,6 @@ export const CarCatalogue = () => {
         car.name.toLowerCase().includes(CarModels.toLowerCase()))
   );
 
-  console.log(filteredCars.length);
 
   return (
     <div className="flex flex-col px-4 md:px-0 justify-center text-center">

@@ -39,13 +39,11 @@ export const CarCatalogue = () => {
         car.name.toLowerCase().includes(CarModels.toLowerCase()))
   );
 
-  console.log(filteredCars.length);
-
   return (
     <div className="flex flex-col px-4 md:px-0 justify-center text-center">
-      <div className="flex flex-col md:flex-row text-center items-center justify-between mx-auto w-full md:w-max gap-5 h-max md:mx-[25rem]">
+      <div className="flex flex-col xl:flex-row text-center items-center justify-between w-full md:w-max gap-5 h-max md:mx-[20rem]">
         <h1 className="text-3xl font-medium mb-4 md:mb-0">Car Catalogue</h1>
-        <div className="bg-slate-100 p-2 rounded-full flex flex-col md:flex-row gap-5 pl-12 border-2 border-gray-200">
+        <div className="bg-slate-100 p-2 rounded-full flex flex-col md:flex-row gap-5 pl-12 border-2 text-center items-center border-gray-200">
           <div className="flex flex-row gap-2">
             <Image
               src="/repair_key.svg"
@@ -74,8 +72,8 @@ export const CarCatalogue = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-5 mt-4 md:mt-0">
-          <div className="flex p-2 rounded-lg border-2 border-gray-200">
+        <div className="flex flex-col md:flex-row gap-5 mt-4 md:mt-0 items-center text-center">
+          <div className="flex p-2 rounded-lg border-2 border-gray-200 w-max">
             <h1 className="mr-1">Motor type:</h1>
             <select name="MotorTypeSelect" id="" onChange={HandleSeats}>
               <option value="fuel">Fuel</option>
@@ -83,7 +81,7 @@ export const CarCatalogue = () => {
               <option value="gas">Gas</option>
             </select>
           </div>
-          <div className="flex p-2 rounded-lg border-2 border-gray-200">
+          <div className="flex p-2 rounded-lg border-2 border-gray-200 w-max">
             <h1 className="mr-1">Year:</h1>
             <select
               name="YearSelect"
