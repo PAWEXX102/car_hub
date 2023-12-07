@@ -11,6 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+      <link rel="icon" href="/CarLogo.svg" type="image/x-icon" />
+    </head>
       <body className={fredoka.className}>
         <NavBar />
         <div className="pt-16">
