@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { CarCatalogue } from "./components/CarCatalogue";
 
+const scrollToCars = () => document.getElementById("Cars").scrollIntoView();
+
 export default function Home() {
   return (
     <main className=" flex flex-col items-center text-center justify-center">
@@ -16,14 +18,14 @@ export default function Home() {
             process.
           </h1>
           <button
-            onClick={() => document.getElementById("Cars").scrollIntoView()}
+            onClick={scrollToCars}
             className="bg-blue-600 rounded-full px-7 py-2 text-lg font-medium text-white hover:scale-110 duration-200"
           >
             Explore Cars
           </button>
         </div>
         <div className=" relative left-0 md:left-[30rem] bottom-0 md:bottom-[5rem] hidden lg:block">
-          <Image src="/hero-bg.png" alt="Hero" width={4000} height={4000} className=" relative object-cover bottom-[5rem] " />
+          <Image src="/hero-bg.png" alt="Hero" width={4000} height={4000} className=" relative object-cover bottom-[6rem] right-20 " />
           <Image
             src="/hero.png"
             alt="Hero"

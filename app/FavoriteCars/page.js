@@ -4,11 +4,13 @@ import { CarCatalogue } from "../components/CarCatalogueFavorite";
 
 export default function FavoriteCars() {
   return (
-    <main className=" flex flex-col items-center text-center justify-center">
-      <div className=" flex flex-row text-start items-center w-auto h-auto">
-        <div className=" flex flex-col my-[10rem] ml-20 gap-7 text-start items-start">
-          <h1 className=" text-8xl">Your favorite cars.</h1>
-          <h1 className="text-3xl text-gray-400">
+    <main className=" flex flex-col items-center text-center justify-start">
+      <div className="flex flex-col md:flex-row text-start items-center  h-auto my-10 ">
+        <div className="lg:ml-5 flex flex-col gap-10 text-center items-center w-full lg:text-start lg:items-start">
+          <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-6xl w-[20rem] lg:w-auto font-semibold lg:font-medium">
+            Your favorite cars.
+          </h1>
+          <h1 className="text-sm sm:text-md md:text-lg lg:text-xl xl:text-3xl text-gray-400 w-[20rem] lg:w-auto">
             Here are all the cars you liked
           </h1>
           <Link
@@ -18,13 +20,13 @@ export default function FavoriteCars() {
             Explore Cars
           </Link>
         </div>
-        <div>
+        <div className="hidden lg:block">
           <Image
             src="/heart.svg"
             alt="Hero"
             width={600}
             height={100}
-            className=" ml-[20rem] rotate-[15deg] mt-14"
+            className=" mr-[20rem] rotate-[15deg] mt-14 z-2 object-fill"
           />
         </div>
       </div>

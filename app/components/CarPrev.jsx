@@ -40,7 +40,7 @@ export const CarPrev = ({ car }) => {
       className="relative"
     >
       <div
-        className={`flex flex-col rounded-2xl gap-1 w-[13rem] h-[14rem] lg:w-[15rem]  lg:h-[16rem] ${
+        className={`flex flex-col rounded-2xl gap-1 w-[13rem] h-[15rem] lg:w-[15rem]  lg:h-[16rem] ${
           isHovered ? "bg-white drop-shadow-xl" : "bg-gray-100"
         } duration-200`}
         onMouseEnter={() => setIsHovered(true)}
@@ -49,7 +49,13 @@ export const CarPrev = ({ car }) => {
       >
         <div className="flex flex-row lg:gap-14 gap-10 px-5 pt-5 items-center text-center">
           <div className="flex gap-2 items-center text-center">
-            <Image src={car.mark} width={32} height={32} alt={"MarkLogo"} className=" object-cover" />
+            <Image
+              src={car.mark}
+              width={32}
+              height={32}
+              alt={"MarkLogo"}
+              className=" object-cover"
+            />
             <h1 className="lg:text-xl text-sm font-medium">{car.name}</h1>
           </div>
           <button onClick={HandleFavoriteCar}>

@@ -6,7 +6,7 @@ export const NavLinks = [
     name: "Rental deals",
   },
   {
-    path: "FavoriteCars",
+    path: "/FavoriteCars",
     name: "Favorite Cars",
   },
 ];

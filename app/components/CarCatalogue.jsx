@@ -11,22 +11,6 @@ export const CarCatalogue = () => {
   const [CarManufactures, setCarManufactures] = useState("");
 
 
-  const HandleSeats = (e) => {
-    setSelectMotorType(e.target.value);
-  };
-
-  const HandleYear = (e) => {
-    setSelectYear(e.target.value);
-  };
-
-  const HandleManufacture = (e) => {
-    setCarManufactures(e.target.value);
-  };
-
-  const HandleModels = (e) => {
-    setCarModels(e.target.value);
-  };
-
   const filteredCars = Cars.filter(
     (car) =>
       car.motorType === SelectMotorType &&
@@ -57,7 +41,7 @@ export const CarCatalogue = () => {
               id=""
               placeholder="Manufacture Name"
               className="bg-transparent"
-              onChange={HandleManufacture}
+              onChange={(e) => setCarManufactures(e.target.value)}
             />
           </div>
           <div className="flex flex-row gap-2">
@@ -68,14 +52,14 @@ export const CarCatalogue = () => {
               id=""
               placeholder="Car Model"
               className="bg-transparent"
-              onChange={HandleModels}
+              onChange={(e) => setCarModels(e.target.value)}
             />
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-5 mt-4 md:mt-0 items-center text-center">
           <div className="flex p-2 rounded-lg border-2 border-gray-200 w-max">
             <h1 className="mr-1">Motor type:</h1>
-            <select name="MotorTypeSelect" id="" onChange={HandleSeats}>
+            <select name="MotorTypeSelect" id="" onChange={(e) => setSelectMotorType(e.target.value)}>
               <option value="fuel">Fuel</option>
               <option value="electric">Electric</option>
               <option value="gas">Gas</option>
@@ -86,7 +70,7 @@ export const CarCatalogue = () => {
             <select
               name="YearSelect"
               id=""
-              onChange={HandleYear}
+              onChange={(e) => setSelectYear(e.target.value)}
               className="overflow-auto"
             >
               <option value="2017">2017</option>
@@ -107,7 +91,7 @@ export const CarCatalogue = () => {
           ))}
         </div>
         <h1
-          className={`text-5xl font-semibold text-gray-400 mx-auto ${
+          className={`text-3xl lg:text-5xl font-semibold text-gray-400 mx-5 ${
             filteredCars.length === 0 ? "block" : "hidden"
           }`}
         >
