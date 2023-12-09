@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-![Logo aplikacji](/LogoREADME.png "Logo")
+![Logo aplikacji](LogoREADME.png "Logo")
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
