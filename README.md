@@ -1,6 +1,7 @@
+# Car Catalog Application
+
 ![Application Logo](LogoREADME.png "Logo")
 
-# Car Catalog Application
 
 ## Project Description
 
